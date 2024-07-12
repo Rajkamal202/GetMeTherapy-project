@@ -13,7 +13,7 @@ const TrackingScreen = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-orange-500 p-4">
-    <div className="flex gap-3 p-3 mb-12 border border-solid border-orange-900 bg-red-700 font-serif shadow-2xl size-4rem rounded-xl cursor-pointer hover:size-5rem">
+    <div className="flex gap-3 p-3 mb-12 border border-solid border-orange-900 bg-red-700 font-serif shadow-2xl size-4rem rounded-xl cursor-pointer hover:size-5rem hover:border-transparent">
        <UserButton/>
     </div>
       {/* Title */}
