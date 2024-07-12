@@ -5,7 +5,7 @@ import { useState } from 'react';
 import AnalogClock from "./AnalogClock";
 import SpeedSlider from "./SpeedSlider";
 import ShareButton from "./ShareButton";
-import { SignOutButton, SignedOut, UserButton } from "@clerk/clerk-react";
+import {UserButton } from "@clerk/clerk-react";
 
 const TrackingScreen = () => {
   // State to control the speed of the clock
