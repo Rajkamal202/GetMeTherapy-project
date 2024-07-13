@@ -1,5 +1,3 @@
-// src/components/RandomQuote.jsx
-
 import { useEffect, useState } from 'react';
 
 const RandomQuote = () => {

@@ -6,6 +6,7 @@ import AnalogClock from "./AnalogClock";
 import SpeedSlider from "./SpeedSlider";
 import ShareButton from "./ShareButton";
 import {UserButton } from "@clerk/clerk-react";
+import Navbar from "../Navbar";
 
 const TrackingScreen = () => {
   // State to control the speed of the clock
@@ -13,7 +14,8 @@ const TrackingScreen = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-orange-500 p-4">
-    <div className="flex gap-3 p-3 mb-12 border border-solid border-orange-900 bg-red-700 font-serif shadow-2xl size-4rem rounded-xl cursor-pointer hover:size-5rem hover:border-transparent">
+    <Navbar/>
+    <div className="flex gap-3 p-3 m-4 border border-solid border-orange-900 bg-red-700 font-serif shadow-2xl size-4rem rounded-xl cursor-pointer hover:size-5rem hover:border-transparent">
        <UserButton/>
     </div>
       {/* Title */}
