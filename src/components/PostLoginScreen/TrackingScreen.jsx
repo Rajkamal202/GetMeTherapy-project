@@ -1,4 +1,4 @@
-// src/components/PostLoginScreen/TrackingScreen.jsx
+
 
 import RandomQuote from "../RandomQuote/RandomQuote";
 import { useState } from 'react';
@@ -19,7 +19,7 @@ const TrackingScreen = () => {
        <UserButton/>
     </div>
       {/* Title */}
-      <h1 className="text-2xl font-bold text-white mb-4">Tracking Screen</h1>
+      <h1 className="text-2xl font-bold text-white mb-4 bg-black p-3 rounded-xl shadow-2xl border border-solid border-white">Tracking Screen</h1>
       
       {/* Analog Clock Component */}
       <AnalogClock speed={speed} />
