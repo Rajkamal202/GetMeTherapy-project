@@ -21,7 +21,7 @@ const RandomQuote = () => {
 
   return (
     <div className="mt-4 p-4 bg-gray-200 rounded shadow">
-      <p className="text-center italic">"{quote}"</p>
+      <p className="text-center italic">&quot;{quote}&quot;</p>
     </div>
   );
 };

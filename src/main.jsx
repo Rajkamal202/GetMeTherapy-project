@@ -11,7 +11,11 @@ import SignInPage from './app/auth/SignInPage.jsx';
 import SignUpPage from './app/auth/SignUpPage.jsx';
 import TrackingScreen from './components/PostLoginScreen/TrackingScreen.jsx';
 
-const publishableKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+
+if (!PUBLISHABLE_KEY) {
+  throw new Error("Missing Publishable Key")
+}
 
 const router = createBrowserRouter([
   { path: "/", element: <Onboarding1 /> },
@@ -23,9 +27,10 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <ClerkProvider publishableKey={publishableKey}>
+    <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
     <RouterProvider router={router} />
-  </ClerkProvider>
+    </ClerkProvider>
+
 );
 
 
